@@ -16,11 +16,21 @@
     .its {
         fill: $background-text;
         font-family: "Nova Square";
-        font-size: 40px;
+        font-size: 20px;
         user-select: none;
     }
 
     circle:hover {
         fill: $light-accent;
+    }
+
+    .arc {
+        fill: none;
+        stroke: $accent;
+        stroke-width: 8px;
+    }
+
+    .arc:hover {
+        stroke: $light-accent;
     }
 }

@@ -26,7 +26,7 @@ body {
 .menu .its {
   fill: #FFFFFF;
   font-family: "Nova Square";
-  font-size: 40px;
+  font-size: 20px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -35,5 +35,15 @@ body {
 
 .menu circle:hover {
   fill: #FF9637;
+}
+
+.menu .arc {
+  fill: none;
+  stroke: #EE7203;
+  stroke-width: 8px;
+}
+
+.menu .arc:hover {
+  stroke: #FF9637;
 }
 /*# sourceMappingURL=style.css.map */

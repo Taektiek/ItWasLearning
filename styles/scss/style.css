@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
 html {
   padding: 0;
   margin: 0;
@@ -15,7 +16,7 @@ html {
 }
 
 body {
-  background-color: #444059;
+  background: radial-gradient(circle, #716B94, #444059);
   padding: 0;
   margin: 0;
 }
@@ -143,12 +144,12 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 70px;
+  height: 90px;
   background-color: #716B94;
 }
 
 .header .logo {
-  height: 70px;
+  height: 90px;
 }
 
 .header .logo .logo-circle {
@@ -157,7 +158,7 @@ html, body {
 
 .header .logo .logo-text {
   font-family: "Nova Square";
-  font-size: 50px;
+  font-size: 45px;
   fill: #FFFFFF;
 }
 
@@ -179,7 +180,7 @@ html, body {
 
 .header .page-link {
   font-family: "Nova Square";
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #C4C4C4;
   margin: 5px;
 }
@@ -195,29 +196,80 @@ html, body {
 /* colors */
 .subheader {
   background-color: #FFFFFF;
-  height: 60px;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .subheader .vak {
   font-family: "Nova Square";
-  font-size: 30px;
-  margin-right: 15px;
+  font-size: 45px;
   color: #000000;
+  margin: 10px;
 }
 
 .subheader .menu {
   font-family: "Nova Square";
-  font-size: 20px;
-  margin: 3px;
+  font-size: 30px;
+  color: #606060;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 5px;
+}
+
+.subheader .menu.active {
+  text-decoration: underline;
+}
+
+/* colors */
+.activity {
+  margin: 20px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-filter: drop-shadow(0 0 10px #00000099);
+          filter: drop-shadow(0 0 10px #00000099);
+}
+
+.activity .icon {
+  margin: 7px;
+  width: 100px;
+}
+
+.activity .icon circle {
+  fill: #EE7203;
+}
+
+.activity .icon text {
+  font-family: "Nova Square";
+  font-size: 50px;
+  fill: #FFFFFF;
+}
+
+.activity .information .title {
+  margin: 10px;
+  font-family: "Nova Square";
+  font-size: 28px;
+  color: #000000;
+}
+
+.activity .information .deadline {
+  margin: 10px;
+  font-family: "Nova Square";
+  font-size: 28px;
   color: #606060;
 }
 /*# sourceMappingURL=style.css.map */

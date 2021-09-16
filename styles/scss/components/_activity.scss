@@ -1,0 +1,53 @@
+@import "../abstract/_variables.scss";
+@import "../abstract/_fonts.scss";
+
+.activity {
+    margin: 20px;
+    border-radius: 15px;
+
+    background-color: $background-text;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    filter: drop-shadow(0 0 10px #00000099);
+
+    .icon {
+        margin: 7px;
+        width: 100px;
+
+        circle {
+            fill: $accent;
+        }
+
+        text {
+            font-family: "Nova Square";
+            font-size: 50px;
+            
+            fill: $background-text;
+        }
+    }
+
+    .information {
+        
+
+        .title {
+            margin: 10px;
+
+            font-family: "Nova Square";
+            font-size: 28px;
+
+            color: $foreground-text;
+        }
+
+        .deadline {
+            margin: 10px;
+
+            font-family: "Nova Square";
+            font-size: 28px;
+
+            color: $foreground-text-inactive;
+        }
+    }
+}

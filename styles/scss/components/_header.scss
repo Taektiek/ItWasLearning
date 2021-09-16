@@ -4,20 +4,20 @@
 .header {
     display: flex;
     align-items: center;
-    height: 70px;
+    height: 90px;
     background-color: $light-background;
 
     // overflow: scroll;
 
     .logo {
-        height: 70px;
+        height: 90px;
         .logo-circle {
             fill: $accent;
         }
 
         .logo-text {
             font-family: "Nova Square";
-            font-size: 50px;
+            font-size: 45px;
             fill: $background-text;
         }
     }
@@ -32,7 +32,7 @@
 
     .page-link {
         font-family: "Nova Square";
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: $background-text-inactive;
         margin: 5px;
     }

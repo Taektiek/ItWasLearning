@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-color: $background;
+    background: radial-gradient(circle, $light-background, $background);
     padding: 0;
     margin: 0;
 }

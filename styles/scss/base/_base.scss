@@ -3,6 +3,10 @@
 html {
     padding: 0;
     margin: 0;
+
+    @media screen and (max-width: 500px){
+        font-size: 10px;
+    }
 }
 
 body {

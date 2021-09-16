@@ -1,13 +1,17 @@
 @import "../abstract/_variables.scss";
 @import "../components/_header.scss";
 
+html, body {
+    height: 100%;
+}
+
 .top {
     text-align: center;
     .maand {
         font-family: "Nova Square";
         color: $background-text;
-        font-size: 64px;
-        
+        font-size: 5rem;
+
         margin: 0;
         padding: 0;
 
@@ -25,10 +29,12 @@
     grid-template-columns: repeat(7, auto);
     grid-template-rows: repeat(5, auto);
     
+    height: 66%;
+
     margin: 15px;
 
     .dag {
-        height: 90px;
+        height: auto;
         background-color: $accent;
         margin: 2px;
 
@@ -37,7 +43,7 @@
         justify-content: center;
         
         font-family: "Nova Square";
-        font-size: 35px;
+        font-size: 3em;
         color: $background-text;
         user-select: none;
         font-weight: bold;

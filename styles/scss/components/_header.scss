@@ -1,0 +1,20 @@
+@import "../abstract/_variables.scss";
+@import "../abstract/_fonts.scss";
+
+.header {
+    display: flex;
+    height: 70px;
+    background-color: $light-background;
+
+    .logo {
+        .logo-circle {
+            fill: $accent;
+        }
+
+        .logo-text {
+            font-family: "Nova Square";
+            font-size: 50px;
+            fill: $background-text;
+        }
+    }
+}

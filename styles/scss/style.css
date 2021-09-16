@@ -1,7 +1,15 @@
 /* colors */
 @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+html {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: #444059;
+  padding: 0;
+  margin: 0;
 }
 
 /* colors */
@@ -45,5 +53,24 @@ body {
 
 .menu .arc:hover {
   stroke: #FF9637;
+}
+
+/* colors */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  background-color: #716B94;
+}
+
+.header .logo .logo-circle {
+  fill: #EE7203;
+}
+
+.header .logo .logo-text {
+  font-family: "Nova Square";
+  font-size: 50px;
+  fill: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */

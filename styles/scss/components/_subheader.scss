@@ -1,0 +1,25 @@
+@import "../abstract/_variables.scss";
+@import "../abstract/_fonts.scss";
+
+.subheader {
+    background-color: $background-text;
+    height: 60px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .vak {
+        font-family: "Nova Square";
+        font-size: 30px;
+        margin-right: 15px;
+        color: $foreground-text;
+    }
+
+    .menu {
+        font-family: "Nova Square";
+        font-size: 20px;
+        margin: 3px;
+        color: $foreground-text-inactive;
+    }
+}

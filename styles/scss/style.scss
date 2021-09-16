@@ -1,3 +1,10 @@
+/* BASE */
 @import "base/_base.scss";
+
+/* PAGES */
 @import "pages/_index.scss";
 @import "pages/_agenda.scss";
+
+/* COMPONENTS */
+@import "components/_header.scss";
+@import "components/_subheader.scss";

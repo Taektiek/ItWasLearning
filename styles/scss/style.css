@@ -56,12 +56,20 @@ body {
 }
 
 /* colors */
+/* colors */
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 70px;
   background-color: #716B94;
+}
+
+.header .logo {
+  height: 70px;
 }
 
 .header .logo .logo-circle {
@@ -72,5 +80,79 @@ body {
   font-family: "Nova Square";
   font-size: 50px;
   fill: #FFFFFF;
+}
+
+.header .page-link {
+  font-family: "Nova Square";
+  font-size: 24px;
+  color: #C4C4C4;
+  margin: 5px;
+}
+
+.header .page-link:hover {
+  color: #FFFFFF;
+}
+
+.header .page-link.active {
+  color: #FFFFFF;
+}
+
+.top {
+  text-align: center;
+}
+
+.top .maand {
+  font-family: "Nova Square";
+  color: #FFFFFF;
+  font-size: 64px;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.top .pijl {
+  color: #EE7203;
+  text-decoration: none;
+}
+
+.agenda {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[7];
+      grid-template-columns: repeat(7, auto);
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
+  margin: 15px;
+}
+
+.agenda .dag {
+  height: 90px;
+  background-color: #EE7203;
+  margin: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Nova Square";
+  font-size: 35px;
+  color: #FFFFFF;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-weight: bold;
+}
+
+.agenda .dag.andere-maand {
+  background-color: #D97B26;
+}
+
+.agenda .dag:hover {
+  background-color: #FF9637;
 }
 /*# sourceMappingURL=style.css.map */

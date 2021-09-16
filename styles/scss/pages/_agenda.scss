@@ -1,1 +1,53 @@
+@import "../abstract/_variables.scss";
 @import "../components/_header.scss";
+
+.top {
+    text-align: center;
+    .maand {
+        font-family: "Nova Square";
+        color: $background-text;
+        font-size: 64px;
+        
+        margin: 0;
+        padding: 0;
+
+        margin-top: 15px;
+    }
+
+    .pijl {
+        color: $accent;
+        text-decoration: none;
+    }
+}
+
+.agenda {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: repeat(5, auto);
+    
+    margin: 15px;
+
+    .dag {
+        height: 90px;
+        background-color: $accent;
+        margin: 2px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        font-family: "Nova Square";
+        font-size: 35px;
+        color: $background-text;
+        user-select: none;
+        font-weight: bold;
+    }
+
+    .dag.andere-maand {
+        background-color: $inactive-accent;
+    }
+
+    .dag:hover {
+        background-color: $light-accent;
+    }
+}

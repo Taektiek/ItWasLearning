@@ -3,10 +3,12 @@
 
 .header {
     display: flex;
+    align-items: center;
     height: 70px;
     background-color: $light-background;
 
     .logo {
+        height: 70px;
         .logo-circle {
             fill: $accent;
         }
@@ -16,5 +18,20 @@
             font-size: 50px;
             fill: $background-text;
         }
+    }
+
+    .page-link {
+        font-family: "Nova Square";
+        font-size: 24px;
+        color: $background-text-inactive;
+        margin: 5px;
+    }
+
+    .page-link:hover {
+        color: $background-text;
+    }
+
+    .page-link.active {
+        color: $background-text;
     }
 }

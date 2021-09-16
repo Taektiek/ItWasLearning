@@ -1,5 +1,39 @@
 /* colors */
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
 body {
   background-color: #444059;
+}
+
+/* colors */
+.main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu {
+  fill: #EE7203;
+  width: 66%;
+}
+
+.menu .its {
+  fill: #FFFFFF;
+  font-family: "Nova Square";
+  font-size: 40px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.menu circle:hover {
+  fill: #FF9637;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,26 @@
+@import "../abstract/variables.scss";
+@import "../abstract/fonts.scss";
+
+.main {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    fill: $accent;
+    width: 66%;
+
+    .its {
+        fill: $background-text;
+        font-family: "Nova Square";
+        font-size: 40px;
+        user-select: none;
+    }
+
+    circle:hover {
+        fill: $light-accent;
+    }
+}

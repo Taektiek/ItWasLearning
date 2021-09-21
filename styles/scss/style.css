@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
 html {
   padding: 0;
   margin: 0;
@@ -271,5 +272,150 @@ html, body {
   font-family: "Nova Square";
   font-size: 28px;
   color: #606060;
+}
+
+/* colors */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.overlay .day-schedule {
+  background-color: #716B94;
+  width: 90%;
+  height: 90%;
+  -webkit-filter: drop-shadow(0 0 10px #00000033);
+          filter: drop-shadow(0 0 10px #00000033);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.overlay .day-schedule .date {
+  font-family: "Nova Square";
+  font-size: 48px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-top: 12px;
+}
+
+.overlay .day-schedule .hours {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overlay .day-schedule .hours .hour {
+  background-color: #C4C4C4;
+  width: 90%;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3px;
+}
+
+.overlay .day-schedule .hours .hour .number {
+  width: 40px;
+  height: 40px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+  font-family: "Nova Square";
+  font-weight: bold;
+  color: #000000;
+  margin: 10px;
+}
+
+.overlay .day-schedule .hours .hour .text {
+  font-family: "Nova Square";
+  font-size: 18px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.overlay .day-schedule .hours .hour .text * {
+  margin: 1px;
+}
+
+.overlay .day-schedule .hours .hour .extra-info {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  font-family: "Nova Square";
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 10px;
+  margin-left: auto;
+}
+
+.overlay .day-schedule .hours .hour .extra-info.homework {
+  background-color: #EE7203;
+}
+
+.overlay .day-schedule .hours .hour .extra-info.choice {
+  background-color: #444059;
+}
+
+.overlay .day-schedule .hours .hour:hover {
+  background-color: #FFFFFF;
+}
+
+.overlay .day-schedule .hours .hour:hover .number {
+  background-color: #C4C4C4;
 }
 /*# sourceMappingURL=style.css.map */

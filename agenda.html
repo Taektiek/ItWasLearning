@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="overlay">
-        <div class="day-schedule">
+        <div class="day-schedule" onclick="hide()">
             <h1 class="date">19 Oktober 2021</h1>
             <div class="hours">
                 <div class="hour">
@@ -120,7 +120,7 @@
         <div class="dag">15</div>
         <div class="dag">16</div>
         <div class="dag">17</div>
-        <div class="dag">18</div>
+        <div class="dag" onclick="show()">18</div>
         <div class="dag">19</div>
         <div class="dag">20</div>
         <div class="dag">21</div>
@@ -136,5 +136,7 @@
         <div class="dag">31</div>
         <div class="dag andere-maand">1</div>
     </div> 
+
+    <script src="scripts/toggle_day-schedule.js"></script>
 </body>
 </html>

@@ -220,6 +220,10 @@ html, body {
   margin: 10px;
 }
 
+.subheader a {
+  text-decoration: none;
+}
+
 .subheader .menu {
   font-family: "Nova Square";
   font-size: 30px;
@@ -421,5 +425,88 @@ html, body {
 
 .overlay .day-schedule .hours .hour:hover .number {
   background-color: #C4C4C4;
+}
+
+/* colors */
+.planning {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(33%, #C4C4C4), color-stop(33.0%, #FFFFFF));
+  background: linear-gradient(0deg, #C4C4C4 33%, #FFFFFF 33.0%);
+  margin: 20px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-filter: drop-shadow(0 0 10px #00000099);
+          filter: drop-shadow(0 0 10px #00000099);
+}
+
+.planning .topbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.planning .topbar .icon {
+  margin: 7px;
+  width: 100px;
+}
+
+.planning .topbar .icon circle {
+  fill: #EE7203;
+}
+
+.planning .topbar .icon text {
+  font-family: "Nova Square";
+  font-size: 35px;
+  fill: #FFFFFF;
+}
+
+.planning .topbar .title {
+  font-family: "Nova Square";
+  font-size: 28px;
+  color: #000000;
+  margin: 0;
+}
+
+.planning .underbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.planning .underbar .next-deadline {
+  font-family: "Nova Square";
+  font-size: 18px;
+  color: #000AFF;
+  margin: 0;
+  margin-left: 20px;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  text-align: center;
+}
+
+.planning .underbar .arrow {
+  margin-right: 20px;
+  font-family: "Nova Square";
+  font-size: 24px;
 }
 /*# sourceMappingURL=style.css.map */

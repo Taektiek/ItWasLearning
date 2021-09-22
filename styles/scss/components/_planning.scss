@@ -1,0 +1,67 @@
+@import "../abstract/_variables.scss";
+
+.planning {
+    background: linear-gradient(0deg, $background-text-inactive 33%, $background-text 33.000001%);
+    margin: 20px;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    filter: drop-shadow(0 0 10px #00000099);
+
+    .topbar {
+        display: flex;
+        align-items: center;
+        .icon {
+            margin: 7px;
+            width: 100px;
+
+            circle {
+                fill: $accent;
+            }
+
+            text {
+                font-family: "Nova Square";
+                font-size: 35px;
+                
+                fill: $background-text;
+            }
+        }
+
+        .title {
+            font-family: "Nova Square";
+            font-size: 28px;
+            color: $foreground-text;
+            margin: 0;
+        }
+    }
+
+    .underbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 14px;
+        align-items: center;
+        
+        .next-deadline {
+            font-family: "Nova Square";
+            font-size: 18px;
+            color: $link-text;
+            margin: 0;
+            margin-left: 20px;
+            
+            flex-grow: 2;
+            text-align: center;
+        }
+
+        .arrow {
+            margin-right: 20px;
+            font-family: "Nova Square";
+            font-size: 24px;
+        }
+    }
+
+}

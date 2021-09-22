@@ -16,6 +16,10 @@
         margin: 10px;
     }
 
+    a {
+        text-decoration: none;
+    }
+
     .menu {
         font-family: "Nova Square";
         font-size: 30px;
@@ -23,6 +27,7 @@
 
         width: fit-content;
         margin: 5px;
+
     }
 
     .menu.active {

@@ -113,15 +113,6 @@ function createArc(x, y, radius, startAngle, endAngle, text, href, onclick, id) 
     }
 }
 
-function createRing(amount, marginFactor, radius) {
-    ringCount++
-    let margin = amount*marginFactor;
-
-    for (let i=0; i<amount; i++) {
-        createArc(50, 50, radius, (360/amount)*i+margin, (360/amount)*i+(90-margin), "test", i)
-    }
-}
-
 function createRingFromDict(margin, radius, dict) {
 
     ringCount++
@@ -143,9 +134,6 @@ function toggleRing() {
         }
     })
 }
-
-// createRing(5, 3, 28)
-// createRing(8, 3, 40)
 
 createRingFromDict(6, 28, ring1)
 createRingFromDict(20, 40, ring2)

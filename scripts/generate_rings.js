@@ -1,3 +1,55 @@
+let ringCount = 0;
+
+let ring1 = [
+    {
+        "text": "berichten",
+        "link": "index.html"
+    },
+    {
+        "text": "vakken",
+        "onclick": "toggleRing()"
+    },
+    {
+        "text": "agenda",
+        "link": "agenda.html"
+    },
+    {
+        "text": "cijfers",
+        "link": "index.html"
+    },
+]
+
+let ring2 = [
+    {
+        "text": "Wiskunde D",
+        "link": "index.html"
+    },
+    {
+        "text": "Informatica",
+        "link": "informatica.html"
+    },
+    {
+        "text": "Spaans",
+        "link": "index.html"
+    },
+    {
+        "text": "Engels",
+        "link": "index.html"
+    },
+    {
+        "text": "Nederlands",
+        "link": "index.html"
+    },
+    {
+        "text": "Filosofie",
+        "link": "index.html"
+    },
+    {
+        "text": "Wiskunde B",
+        "link": "index.html"
+    },
+]
+
 function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
   var angleInRadians = (angleInDegrees-90) * Math.PI / 180.0;
 
@@ -22,21 +74,79 @@ function describeArc(x, y, radius, startAngle, endAngle){
     return d;       
 }
 
-function createArc(x, y, radius, startAngle, endAngle) {
+function createText(path, text, href, onclick, id, svg) {
+    var svgText = document.createElementNS("http://www.w3.org/2000/svg", "text")
+    var svgTextPath = document.createElementNS("http://www.w3.org/2000/svg", "textPath")
+    var svgLink = document.createElementNS("http://www.w3.org/2000/svg", "a")
+    svg.insertBefore(svgLink, path.nextSibling)
+    if (href != undefined) {
+        svgLink.setAttribute("href", href)
+    }
+    if (onclick != undefined) {
+        svgLink.setAttribute("onclick", onclick)
+    }
+
+    svgLink.appendChild(svgText)
+    svgText.appendChild(svgTextPath)
+    svgText.setAttribute("text-anchor", "middle")
+    svgText.classList.add("ring-"+ringCount)
+    svgTextPath.setAttribute("href", "#" + ringCount + "-" +id)
+    svgTextPath.setAttribute("startOffset", "50%")
+    svgText.classList.add("ring-text")
+    svgTextPath.textContent = text
+}
+
+function createArc(x, y, radius, startAngle, endAngle, text, href, onclick, id) {
     var path = document.createElementNS("http://www.w3.org/2000/svg", "path")
     var svg = document.getElementById("svg")
     svg.insertBefore(path, svg.lastChild)
     path.classList.add("arc")
     path.setAttribute("d", describeArc(x, y, radius, startAngle, endAngle));
-}
-
-function createRing(amount, marginFactor, radius) {
-    let margin = amount*marginFactor;
-
-    for (let i=0; i<amount; i++) {
-        createArc(50, 50, radius, (360/amount)*i+margin, (360/amount)*i+(90-margin))
+    path.setAttribute("id", ringCount + "-" + id)
+    path.classList.add("ring-"+ringCount)
+    createText(path, text, href, onclick, id, svg)
+    if (href != undefined) {
+        path.setAttribute("href", href)
+    }
+    if (onclick != undefined) {
+        path.setAttribute("onclick", onclick)
     }
 }
 
-createRing(5, 3, 28)
+function createRing(amount, marginFactor, radius) {
+    ringCount++
+    let margin = amount*marginFactor;
+
+    for (let i=0; i<amount; i++) {
+        createArc(50, 50, radius, (360/amount)*i+margin, (360/amount)*i+(90-margin), "test", i)
+    }
+}
+
+function createRingFromDict(margin, radius, dict) {
+
+    ringCount++
+
+    let k = 0;
+
+    dict.forEach(function(i) {
+        createArc(50, 50, radius, (360/dict.length)*k+margin, (360/dict.length)*k+(90-margin), i["text"], i["link"], i["onclick"], k)
+        k++
+    })
+}
+
+function toggleRing() {
+    [...document.getElementsByClassName("ring-2")].forEach(function(i){
+        if (i.classList.contains("none")) {
+            i.classList.remove("none")
+        } else {
+            i.classList.add("none")
+        }
+    })
+}
+
+// createRing(5, 3, 28)
 // createRing(8, 3, 40)
+
+createRingFromDict(6, 28, ring1)
+createRingFromDict(20, 40, ring2)
+toggleRing()

@@ -24,11 +24,27 @@
         fill: $light-accent;
     }
 
+    .ring-text {
+        fill: $background-text;
+        font-family: "Nova Square";
+        font-size: 7px;
+
+        user-select: none;
+        cursor: pointer;
+    }
+
+    .ring-2 {
+        font-size: 5px !important;
+    }
+
     .arc {
         fill: none;
         stroke: $accent;
         stroke-width: 8px;
+
+        cursor: pointer;
     }
+
 
     .arc:hover {
         stroke: $light-accent;

@@ -60,10 +60,26 @@ body {
   fill: #FF9637;
 }
 
+.menu .ring-text {
+  fill: #FFFFFF;
+  font-family: "Nova Square";
+  font-size: 7px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+.menu .ring-2 {
+  font-size: 5px !important;
+}
+
 .menu .arc {
   fill: none;
   stroke: #EE7203;
   stroke-width: 8px;
+  cursor: pointer;
 }
 
 .menu .arc:hover {

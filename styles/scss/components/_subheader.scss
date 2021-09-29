@@ -3,15 +3,15 @@
 
 .subheader {
     background-color: $background-text;
-    height: 80px;
+    height: 5rem;
 
     display: flex;
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: center;
 
     .vak {
         font-family: "Nova Square";
-        font-size: 45px;
+        font-size: 2rem;
         color: $foreground-text;
         margin: 10px;
     }
@@ -22,7 +22,7 @@
 
     .menu {
         font-family: "Nova Square";
-        font-size: 30px;
+        font-size: 1.8rem;
         color: $foreground-text-inactive;
 
         width: fit-content;

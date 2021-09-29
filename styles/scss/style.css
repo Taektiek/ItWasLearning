@@ -10,7 +10,7 @@ html {
   margin: 0;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   html {
     font-size: 10px;
   }
@@ -170,7 +170,7 @@ html, body {
 }
 
 .header .logo {
-  height: 90px;
+  height: 6rem;
 }
 
 .header .logo .logo-circle {
@@ -217,21 +217,21 @@ html, body {
 /* colors */
 .subheader {
   background-color: #FFFFFF;
-  height: 80px;
+  height: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .subheader .vak {
   font-family: "Nova Square";
-  font-size: 45px;
+  font-size: 2rem;
   color: #000000;
   margin: 10px;
 }
@@ -242,7 +242,7 @@ html, body {
 
 .subheader .menu {
   font-family: "Nova Square";
-  font-size: 30px;
+  font-size: 1.8rem;
   color: #606060;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -271,7 +271,7 @@ html, body {
 
 .activity .icon {
   margin: 7px;
-  width: 100px;
+  width: 6rem;
 }
 
 .activity .icon circle {
@@ -284,17 +284,21 @@ html, body {
   fill: #FFFFFF;
 }
 
+.activity .information {
+  width: 85%;
+}
+
 .activity .information .title {
   margin: 10px;
   font-family: "Nova Square";
-  font-size: 28px;
+  font-size: 2rem;
   color: #000000;
 }
 
 .activity .information .deadline {
   margin: 10px;
   font-family: "Nova Square";
-  font-size: 28px;
+  font-size: 2rem;
   color: #606060;
 }
 
@@ -335,7 +339,7 @@ html, body {
 
 .overlay .day-schedule .date {
   font-family: "Nova Square";
-  font-size: 48px;
+  font-size: 3rem;
   color: #FFFFFF;
   margin: 0;
   margin-top: 12px;
@@ -366,8 +370,8 @@ html, body {
 }
 
 .overlay .day-schedule .hours .hour .number {
-  width: 40px;
-  height: 40px;
+  width: 3rem;
+  height: 3rem;
   background-color: #FFFFFF;
   border-radius: 5px;
   display: -webkit-box;
@@ -379,7 +383,7 @@ html, body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 24px;
+  font-size: 2rem;
   font-family: "Nova Square";
   font-weight: bold;
   color: #000000;
@@ -388,7 +392,7 @@ html, body {
 
 .overlay .day-schedule .hours .hour .text {
   font-family: "Nova Square";
-  font-size: 18px;
+  font-size: 1.3rem;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -407,8 +411,8 @@ html, body {
 }
 
 .overlay .day-schedule .hours .hour .extra-info {
-  width: 40px;
-  height: 40px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -419,7 +423,7 @@ html, body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-family: "Nova Square";
   font-weight: bold;
   color: #FFFFFF;
@@ -474,7 +478,7 @@ html, body {
 
 .planning .topbar .icon {
   margin: 7px;
-  width: 100px;
+  width: 6rem;
 }
 
 .planning .topbar .icon circle {
@@ -489,7 +493,7 @@ html, body {
 
 .planning .topbar .title {
   font-family: "Nova Square";
-  font-size: 28px;
+  font-size: 2rem;
   color: #000000;
   margin: 0;
 }
@@ -502,7 +506,7 @@ html, body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 14px;
+  margin-bottom: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -510,7 +514,7 @@ html, body {
 
 .planning .underbar .next-deadline {
   font-family: "Nova Square";
-  font-size: 18px;
+  font-size: 1.2rem;
   color: #000AFF;
   margin: 0;
   margin-left: 20px;
@@ -523,6 +527,6 @@ html, body {
 .planning .underbar .arrow {
   margin-right: 20px;
   font-family: "Nova Square";
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */

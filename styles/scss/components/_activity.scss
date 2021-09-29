@@ -15,7 +15,7 @@
 
     .icon {
         margin: 7px;
-        width: 100px;
+        width: 6rem;
 
         circle {
             fill: $accent;
@@ -30,13 +30,13 @@
     }
 
     .information {
-        
+        width: 85%;
 
         .title {
             margin: 10px;
 
             font-family: "Nova Square";
-            font-size: 28px;
+            font-size: 2rem;
 
             color: $foreground-text;
         }
@@ -45,7 +45,7 @@
             margin: 10px;
 
             font-family: "Nova Square";
-            font-size: 28px;
+            font-size: 2rem;
 
             color: $foreground-text-inactive;
         }

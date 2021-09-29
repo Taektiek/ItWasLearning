@@ -89,6 +89,7 @@ function createText(path, text, href, onclick, id, svg) {
     svgLink.appendChild(svgText)
     svgText.appendChild(svgTextPath)
     svgText.setAttribute("text-anchor", "middle")
+    svgText.setAttribute("dominant-baseline", "middle")
     svgText.classList.add("ring-"+ringCount)
     svgTextPath.setAttribute("href", "#" + ringCount + "-" +id)
     svgTextPath.setAttribute("startOffset", "50%")
@@ -135,6 +136,6 @@ function toggleRing() {
     })
 }
 
-createRingFromDict(6, 28, ring1)
+createRingFromDict(3, 28, ring1)
 createRingFromDict(20, 40, ring2)
 toggleRing()
